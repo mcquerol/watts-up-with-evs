@@ -1,0 +1,13 @@
+function displayFeatures(XTrain)
+    % Define the list of features to display
+    selectedFeatures = {
+        'DeltaQ_min', ...
+        'Qd2', ...
+        'AvgChargeTime', ...
+        'MinIR', ...
+        'IRDiff2And100'
+    };
+
+    % Display the first few rows of the selected features
+    disp(head(XTrain(:, selectedFeatures)));
+end
