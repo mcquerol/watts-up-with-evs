@@ -21,8 +21,8 @@ function plotPerformanceEvaluation(yTest, yPredTest)
     refline(1, 0);
     
     % Add title and labels
-    title('Predicted vs Actual Cycle Life','FontWeight', 'bold');
-    xlabel('Actual cycle life','FontWeight', 'bold');
-    ylabel('Predicted cycle life','FontWeight', 'bold');
+    title('Predicted vs Actual Cycle Life');
+    xlabel('Actual cycle life');
+    ylabel('Predicted cycle life');
     
 end

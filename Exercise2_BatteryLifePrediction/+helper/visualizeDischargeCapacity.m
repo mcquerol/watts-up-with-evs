@@ -17,11 +17,11 @@ function visualizeDischargeCapacity(numBattery,trainDataset)
     ylim([0.85, 1.1]);
     xlim([0, 1000]);
 
-    % Label the axes
-    ylabel('Discharge capacity (Ah) of Battery','FontWeight', 'bold', 'FontSize', 15);
-    xlabel('Cycle','FontWeight', 'bold','FontSize', 15);
+     % Label the axes
+    ylabel('Discharge capacity (Ah) of Battery');
+    xlabel('Cycle');
     
 
     % Add a title for clarity
-    title('Battery Discharge Capacity Over Cycles','FontWeight', 'bold','FontSize', 15);
+    title('Battery Discharge Capacity Over Cycles');
 end
