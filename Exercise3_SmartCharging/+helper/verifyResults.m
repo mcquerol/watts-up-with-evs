@@ -13,6 +13,5 @@ function isFeasible = verifyResults(evBatteryPower)
                 '2) Decrease desired final state of charge', ...
                 '3) Increase grid capacity', '', ...
                 'Good luck!'},'Warning');
-       return;
     end
 end
