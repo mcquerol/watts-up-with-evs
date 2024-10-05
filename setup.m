@@ -10,19 +10,26 @@ else
     fprintf('\nInitializing the exercises...\n');
     %% Exercise 1 setup
     % Store the current working directory
-    originalDir = pwd;
-    
-    cd(fullfile("Exercise1_UnderTheEVHood"))
-    projectPath = fullfile("EV","EV.prj");
-    % Load the Simulink project
-    matlab.project.loadProject(projectPath);
-    
-    filepath = fullfile("System","EvReferenceApplication.slx");
-    load_system(filepath)
-    
-    myModel = "EvReferenceApplication";
-    fprintf("Getting your EV ready for you...\n")
-    set_param(myModel, 'SimulationCommand', 'update');
+    try
+        originalDir = pwd;
+        
+        cd(fullfile("Exercise1_UnderTheEVHood"))
+        projectPath = fullfile("EV","EV.prj");
+        % Load the Simulink project
+        matlab.project.loadProject(projectPath);
+        
+        filepath = fullfile("System","EvReferenceApplication.slx");
+        load_system(filepath)
+        
+        myModel = "EvReferenceApplication";
+        fprintf("Getting your EV ready for you...\n")
+        set_param(myModel, 'SimulationCommand', 'update');
+    catch
+        fprintf('\n An error occured trying to set up exercise 1. Please reach out to a TA.')
+        % Restore the original working directory
+        cd(originalDir);
+        addpath(genpath(pwd));
+    end    
     
     %% Adding all exercises to path
     % Restore the original working directory
