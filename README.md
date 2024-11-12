@@ -28,7 +28,7 @@ A MathWorks account is required to access MATLAB&reg; Online&trade; and the mate
 ## Step II. Activate Workshop License  
 
 The workshop uses MATLAB Online. You must activate the workshop license to participate. 
-1. Using Google Chrome, navigate to \[LINK TBD\] . If you are not already logged in to your MathWorks account, do so.
+1. Using Google Chrome, navigate to the workshop license link provided as part of the workshop. If you are not already logged in to your MathWorks account, do so.
 2. Click ``Access MATLAB Online``.
    
 You can activate this license starting from the day of the workshop up to a week after the workshop date. 
@@ -37,7 +37,6 @@ To run these exercises without workshop license, you will need:
 - MATLAB&reg;
 - Simulink&reg;
 - Powertrain Blockset&trade;
-- Simscape&trade;
 - Statistics and Machine Learning Toolbox&trade;
 - Optimization Toolbox&trade;
 
@@ -52,7 +51,7 @@ MATLAB Online will try to automatically port over your workshop files from GitHu
 
 To verify that your environment is correctly set up for the exercises: 
 1. In the MATLAB Online Command Window: >> setup 
-2. Confirm that the welcome message is display
+2. Confirm that the welcome message is displayed
 
 ## Try Out the Exercises! 
 
